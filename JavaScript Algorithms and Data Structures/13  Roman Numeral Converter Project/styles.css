@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--light-grey: #f5f6f7;
+	--grey: #191919;
+	--orange: #f1be32;
+}
+
+body {
+	background-color: var(--grey);
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	color: var(--light-grey);
+	padding: 0 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 100vh;
+}
+
+h1 {
+	text-align: center;
+	padding: 10px 0;
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.input-container {
+	margin: 10px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	width: min(100vw, 450px);
+	min-height: 100px;
+	border-radius: 20px;
+}
+
+.convert-btn {
+	width: 90px;
+	border: none;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: #202020;
+	color: #d1d5db;
+	cursor: pointer;
+	box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15), -3px -1px 2px rgba(255, 255, 255, 0.05);
+}
+
+.number-input {
+	border: none;
+	outline: 0;
+	padding: 5px;
+	border-radius: 5px;
+	height: 30px;
+	width: 250px;
+	text-align: center;
+	font-size: 1.2rem;
+	margin: 10px;
+}
+
+#output {
+	margin: 10px 0;
+	min-width: 200px;
+	width: fit-content;
+	min-height: 80px;
+	word-break: break-word;
+	padding: 15px;
+	border: 5px solid var(--orange);
+	font-size: 2rem;
+	text-align: center;
+}
